@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: rgb(1, 46, 80);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+.container-fluid {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+}
+.nav-bar {
+  width: 100;
+  display: flex;
+  height: 15rem;
+  justify-content: center;
+}
+.container {
+  width: 110rem;
+  height: 100%;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.logo-container {
+  width: 15rem;
+  height: 15rem;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}
+.menu-item {
+  margin: 2rem;
+}
+.title {
+  font-size: 4.5rem;
+  color: white;
+}
+.title span {
+  transform: uppercase;
+}
+.what {
+  padding: 2rem 0;
+  background-color: var(--primary-color);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.what .content {
+  margin-top: 1.5rem;
+  font-size: 1.75rem;
+}
+.what-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.who {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+}
+.who-container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.who .content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.person {
+  flex: 0 0 33%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+}
+.amr {
+  flex: 0 0 100%;
+}
+.person-image-container {
+  width: 20rem;
+  height: 20rem;
+}
+.person-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.person-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.person-name {
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+.person-job {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 800px) {
+}
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .person:not(:last-child) {
+    flex: 0 0 50%;
+  }
+  .person.amr {
+    flex: 0 0 100%;
+  }
+  .person:last-child {
+    flex: 0 0 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .person {
+    flex: 0 0 100% !important;
+  }
+  .person-text {
+    margin-top: 1rem;
+  }
+}
+.menu-open {
+}
+.menu-close {
+}
+.menu-left {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: -30rem;
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.menu-control {
+  font-size: 5rem;
+  color: #fff;
+}
+.close {
+  color: red;
+  content: "x";
+}
+.active {
+  margin: 0;
+  background-color: #000;
+  height: 100vh;
+}
