@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Obour Mun</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="img/Black Obour Mun.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!--<a href="index-1.html">Ammar</a>
@@ -15,91 +23,103 @@
         <div class="nav-bar">
           <div class="container nav-container">
             <div class="menu-right">
-              <div class="logo-container">
+              <a class="logo-container" href="index.html">
                 <img src="./img/logo.png" alt="Logo" class="logo" />
-              </div>
+              </a>
             </div>
-            <div class="menu-control" id="control">s</div>
+            <a class="nav__word" href="index.html">MUN Obour</a>
+            <div class="menu-left" id="menu">
+              <a class="menu-item" href="#news">News</a>
+              <a class="menu-item" href="#about">About</a>
+              <a class="menu-item" href="#team">Our Team</a>
+              <a class="menu-item" href="#contact">Conatct</a>
+            </div>
           </div>
         </div>
+        <div class="header_content container">
+          <div class="conference">
+            MUN Obour<br />First Conference<br />Is Coming Soon...
+          </div>
+          <div class="cheer">Stay Tuned<span>|</span></div>
+        </div>
+        <div class="warn">The conference is on 24.10.2021</div>
+        <svg class="menu-button" id="menu-control">
+          <use xlink:href="img/bars.svg#icon-bars" />
+        </svg>
       </header>
-      <div class="menu-left" id="menu">
-        <div class="menu-item">about</div>
-        <div class="menu-item">news</div>
-        <div class="menu-item">contact</div>
-        <div class="menu-item">team</div>
-        <div class="menu-item">conference</div>
-      </div>
       <div class="what">
-        <div class="container what-container">
-          <div class="title">what is <span> mun? </span></div>
-          <div class="content">
-            Model United Nations is an interactive, interdisciplinary
-            stimulation which places students in the role of official United
-            Nations delegates. Participants research a country, take on roles as
-            diplomats, investigate international issues, debate, deliberate,
-            consult, and then develop solutions to world problems. These models
-            particularly focus on areas of peace and conflict resolution that
-            are a part of the day-to-day work of the United Nations. During an
-            MUN conference, participants are assigned to delegations
-            representing a specific country.
+        <div class="what__news what__element" id="news">
+          <div class="what__left">
+            <div class="what__img--container">
+              <img src="./img/3.jpg" alt="News Photo" class="what__img" />
+            </div>
+            <a class="what__read" href="news.html">Read More</a>
+          </div>
+          <div class="what__right">
+            <div class="what__title">News</div>
+            <div class="what__paragraph">
+              Keep up to date with the latest news and media coverage on STEM
+              Obour MUN's work: SDGs, World problems, and solutions to promote
+              peace and advocacy.
+            </div>
+          </div>
+        </div>
+        <div class="what__about what__element" id="about">
+          <div class="what__left">
+            <div class="what__img--container">
+              <img src="./img/2.jpg" alt="About Photo" class="what__img" />
+            </div>
+            <a class="what__read" href="about.html">Read More</a>
+          </div>
+          <div class="what__right">
+            <div class="what__title">About</div>
+            <div class="what__paragraph" id="stem__about">
+              STEM Obour Model United Nations is a branch of MUN in Obour STEM
+              School; it is our first season. We aim to set up a conference
+              which is, originally, an educational simulation of the United
+              Nations.
+            </div>
           </div>
         </div>
       </div>
-      <div class="what">
-        <div class="container what-container">
-          <div class="title">Lorem, ipsum. <span> lorem? </span></div>
-          <div class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non
-            repudiandae alias facilis similique, eveniet libero labore incidunt
-            soluta quis odio ipsa iusto doloremque voluptas consequatur
-            laudantium magni aspernatur quasi exercitationem veritatis atque!
-            Doloremque quaerat blanditiis asperiores nisi doloribus sapiente
-            iure fugiat optio assumenda ad accusamus accusantium cum ipsum
-            voluptatum dolore sequi ea ratione labore, ullam perferendis dolores
-            laboriosam aspernatur rem itaque! Nisi omnis voluptatibus cumque?
-            Deleniti optio, itaque atque, officiis omnis, quisquam laboriosam
-            sint voluptatibus rerum temporibus impedit eveniet.
+      <!--Slider main container-->
+      <div class="slider__container" id="team">
+        <div class="slider__title">Gallery</div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/cc/1.jpg" alt="1" class="slide__image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/cc/2.jpg" alt="2" class="slide__image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/cc/3.jpg" alt="3" class="slide__image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/cc/4.jpg" alt="4" class="slide__image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/cc/5.jpg" alt="5" class="slide__image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/cc/6.jpg" alt="6" class="slide__image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/cc/7.jpg" alt="7" class="slide__image" />
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="what">
-        <div class="container what-container">
-          <div class="title">Lorem, ipsum. <span> lorem? </span></div>
-          <div class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non
-            repudiandae alias facilis similique, eveniet libero labore incidunt
-            soluta quis odio ipsa iusto doloremque voluptas consequatur
-            laudantium magni aspernatur quasi exercitationem veritatis atque!
-            Doloremque quaerat blanditiis asperiores nisi doloribus sapiente
-            iure fugiat optio assumenda ad accusamus accusantium cum ipsum
-            voluptatum dolore sequi ea ratione labore, ullam perferendis dolores
-            laboriosam aspernatur rem itaque! Nisi omnis voluptatibus cumque?
-            Deleniti optio, itaque atque, officiis omnis, quisquam laboriosam
-            sint voluptatibus rerum temporibus impedit eveniet.
-          </div>
-        </div>
-      </div>
-      <div class="what">
-        <div class="container what-container">
-          <div class="title">Lorem, ipsum. <span> lorem? </span></div>
-          <div class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non
-            repudiandae alias facilis similique, eveniet libero labore incidunt
-            soluta quis odio ipsa iusto doloremque voluptas consequatur
-            laudantium magni aspernatur quasi exercitationem veritatis atque!
-            Doloremque quaerat blanditiis asperiores nisi doloribus sapiente
-            iure fugiat optio assumenda ad accusamus accusantium cum ipsum
-            voluptatum dolore sequi ea ratione labore, ullam perferendis dolores
-            laboriosam aspernatur rem itaque! Nisi omnis voluptatibus cumque?
-            Deleniti optio, itaque atque, officiis omnis, quisquam laboriosam
-            sint voluptatibus rerum temporibus impedit eveniet.
-          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
       <div class="who">
         <div class="who-container container">
-          <div class="title">Who are <span>We?</span></div>
+          <div class="who__title">Our Team</div>
           <div class="content">
             <div class="person amr">
               <div class="person-image-container">
@@ -107,7 +127,7 @@
               </div>
               <div class="person-text">
                 <div class="person-name">Amr Refaat</div>
-                <div class="person-job">Founder</div>
+                <div class="person-job" id="pos-amr">Founder</div>
               </div>
             </div>
             <div class="person">
@@ -138,9 +158,27 @@
               </div>
             </div>
           </div>
+          <a href="people.html" class="who__read">View More</a>
         </div>
       </div>
+      <footer class="footer">
+        <div class="footer-text">
+          All Rights are reserved. &copy; STEM Obour MUN 2021
+        </div>
+        <div class="footer-icons">
+          <svg class="icon-footer">
+            <use xlink:href="img/facebook.svg#icon-facebook" />
+          </svg>
+          <svg class="icon-footer">
+            <use xlink:href="img/symbol-defs.svg#icon-linkedin" />
+          </svg>
+          <svg class="icon-footer">
+            <use xlink:href="img/symbol-defs.svg#icon-gmail" />
+          </svg>
+        </div>
+      </footer>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="script/script.js"></script>
   </body>
 </html>
