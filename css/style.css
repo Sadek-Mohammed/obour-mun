@@ -5,6 +5,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*
+https://www.facebook.com/109720991402924/posts/122153930159630/
+https://www.facebook.com/109720991402924/posts/122809413427415/
+https://www.facebook.com/109720991402924/posts/118673263841030/
+https://www.facebook.com/109720991402924/posts/121356486906041/
+https://www.facebook.com/109720991402924/posts/117748593933497/
+*/
+/*rgb(42,62,69)*/
 :root {
   --primary-color: rgb(1, 46, 80);
 }
@@ -109,7 +117,7 @@ body {
   color: #fff;
   text-decoration: none;
 }
-. .title {
+.title {
   font-size: 4.5rem;
   color: white;
 }
@@ -357,8 +365,6 @@ body {
     font-size: 50%;
   }
 }
-@media only screen and (max-width: 800px) {
-}
 @media only screen and (max-width: 650px) {
   .container {
     width: 100%;
@@ -382,10 +388,6 @@ body {
   .person-text {
     margin-top: 1rem;
   }
-}
-.menu-open {
-}
-.menu-close {
 }
 .menu-left {
   display: flex;
