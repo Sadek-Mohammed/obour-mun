@@ -1,0 +1,392 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  background-color: rgb(39,70,90);
+  width: 100vw;
+  height: 100vh;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  height: 7rem;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.315);
+  margin-bottom: auto;
+}
+.container {
+  width: 110rem;
+  padding: 4rem;
+}
+.nav__word {
+  color: white;
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  width: 100%;
+  height: 100%;
+}
+.logo-container {
+  width: 7rem;
+  height: 7rem;
+  display: block;
+  cursor: pointer;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}
+.menu-item {
+  margin: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+.menu-left {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+.menu-control {
+  font-size: 5rem;
+  color: #fff;
+}
+.close {
+  color: red;
+  content: "x";
+}
+.active {
+  position: fixed;
+  left: 0 !important;
+}
+.menu-button {
+  width: 5rem;
+  height: 5rem;
+  fill: #fff;
+  position: absolute;
+  top: 0;
+  right: -40rem;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    min-height: 50rem;
+    background-image: url("../img/2\ -\ Copy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-saying{
+  background-color: rgb(128,131,136);
+  opacity: 0.5;
+  padding: 6rem;
+  font-size: 5rem;
+  color: rgb(56,67,73);
+  font-weight: 700;
+  position: relative;
+  width: 100%;
+}
+@keyframes words {
+  0%{
+    content: "Youth of Today";
+  }
+  49%{
+    content: "Youth of Today";
+  }
+  50%{
+    content: "Leaders of tomorrow";
+  }
+  100%{
+    content: "Leaders of tomorrow";
+  }
+}
+.header-saying:before{
+  content: "";
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: words 10s infinite;
+}
+/*
+.header_1{
+  animation: animation_header_1 10s infinite;
+}
+.header_2{
+  animation: animation_header_2 10s infinite;
+}*/
+span{
+  display: block;
+}
+.about-mun,
+.mun-obour{
+  display: flex;
+  justify-content: center;
+}
+.about-mun-container{
+  display: flex;
+  align-items: center;
+}
+.about-mun-image-container{
+  flex: 30% 0 0;
+}
+.about-mun-content{
+  padding: 2rem;
+  padding-top: 0;
+}
+.about-mun-title{
+  color: white;
+  padding-left: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  position: relative;
+}
+.about-mun-title::before{
+  background-color: rgb(37,167,217);
+  content: "";
+  height: 100%;
+  width: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about-mun-image{
+  width: 100%;
+  height: 100%;
+}
+.about-mun-paragraph{
+  padding-top: 1rem;
+  font-size: 1.6rem;
+}
+.misandvis{
+  display: flex;
+  justify-content: center;
+}
+.misandvis-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.mis, .vis{
+  width: 47%;
+}
+.mis-title, .vis-title{
+  color: rgb(0,159,224);
+  font-size: 4rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.mis-paragraph, .vis-paragraph{
+  padding:3.5rem;
+  background-color: rgb(186,189,196);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.mis-paragraph{
+  font-size: 1.56rem;
+}
+.thanks{
+  display: flex;
+  justify-content: center;
+}
+.thanks-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thanks-title{
+  font-size: 4rem;
+  background-color: rgb(0,159,224);
+  color: rgb(186,189,196);
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+.thanks-list{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.thanks-item{
+  flex: 30% 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  padding: 1rem;
+  font-weight: 700;
+  color: rgb(0,159,224);
+  background-color: rgb(186,189,196);
+}
+.mariam, .marawan{
+  font-size:2.5rem;
+  padding: 1.2rem
+}
+@media only screen and (max-width: 1000px) {
+    html {
+      font-size: 50%;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .about-mun-container{
+      flex-direction: column;
+      max-width: 600px;
+    }
+    .about-mun-obour-content{
+      order: 2;
+    }
+    .about-mun-obour-image-container{
+      order: 1;
+    }
+    .about-mun-image-container{
+      width: 75%;
+    }
+  }
+  @media only screen and (max-width: 825px) {
+    .thanks-item{
+      flex: 45% 0 0;
+    }
+  }
+@media only screen and (max-width: 800px) {
+    .menu-button {
+      position: absolute;
+      right: 25px;
+      top: 6px;
+    }
+    .menu-left {
+      flex-direction: column;
+      height: 100vh;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: -50rem;
+      background-color: #000;
+      width: 17.5rem;
+    }
+    .misandvis-container{
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .mis{
+      margin-bottom: 5rem;
+    }
+    .mis, .vis{
+      width: 100%;
+      max-width: 550px;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    .container {
+      width: 100%;
+    } 
+    .thanks-list{
+      justify-content: center;
+      align-items: center;
+    }
+    .thanks-item{
+      flex: 90% 0 0;
+    }
+  }  
+  @media only screen and (max-width: 600px) {
+    .header-saying{
+      font-size: 4rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .header-saying{
+      font-size: 3rem;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .header-saying{
+      padding: 2rem;
+      font-size: 2rem;
+    }
+  }  
+  @media only screen and (max-width: 250px) {
+    .header-saying{
+      padding: 1.5rem;
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .menu-button {
+      right: 3px;
+    }
+    .thanks-item{
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (max-width: 250px) {
+    .nav__word {
+      position: fixed;
+      right: -30rem;
+    }
+  }
+  @keyframes animation_header_1 {
+    0%{
+      text-align: center;
+      vertical-align: center;
+    }
+    50%{
+      transform: translateY(-10rem);
+    }
+    100%{
+        text-align: center;
+        vertical-align: center;
+        transform: translateY(0);
+        z-index: 1;
+    }
+  }
+  @keyframes animation_header_2 {
+    0%{
+      transform: translateY(-10rem);
+      z-index: -5;
+    }
+    50%{
+      text-align: center;
+      vertical-align: center;
+      transform: translateY(0);
+      z-index: 1;
+    }
+    100%{
+      transform: translateY(-100rem);
+      z-index: -5;
+    }
+  }

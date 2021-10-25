@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  background-color: rgb(42, 62, 69);
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  height: 7rem;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.315);
+  margin-bottom: auto;
+}
+.container {
+  width: 110rem;
+  padding: 4rem;
+}
+.nav__word {
+  color: white;
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  width: 100%;
+  height: 100%;
+}
+.logo-container {
+  width: 7rem;
+  height: 7rem;
+  display: block;
+  cursor: pointer;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}
+.menu-item {
+  margin: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+.menu-left {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+.menu-control {
+  font-size: 5rem;
+  color: #fff;
+}
+.close {
+  color: red;
+  content: "x";
+}
+.active {
+  position: fixed;
+  left: 0 !important;
+}
+.menu-button {
+  width: 5rem;
+  height: 5rem;
+  fill: #fff;
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+.who {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .who__title {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .who-container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+  .who .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+.person {
+    flex: 0 0 33%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+  }
+  .amr {
+    flex: 0 0 100%;
+  }
+  .person-image-container {
+    width: 20rem;
+    height: 20rem;
+  }
+  .person-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .person-image {
+    border-radius: 50%;
+    border: 8px rgb(137, 158, 149) solid;
+    width: 100%;
+    height: 100%;
+  } /*rgb(137,158,149) rgb(128,128,131)*/
+  .person-name {
+    font-size: 2rem;
+    color: rgb(128, 128, 131);
+    font-weight: bolder;
+    line-height: 2;
+  }
+  #pos-amr {
+    font-size: 3.5rem;
+  }
+  .person-job {
+    font-size: 2.75rem;
+    line-height: 1.5;
+    font-weight: 700;
+  }
+@media only screen and (max-width: 1000px) {
+    html {
+      font-size: 50%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .menu-button {
+      position: absolute;
+      right: 25px;
+      top: 6px;
+    }
+    .menu-left {
+      flex-direction: column;
+      height: 100vh;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: -50rem;
+      background-color: #000;
+      width: 17.5rem;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    .container {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .person:not(:last-child) {
+        flex: 0 0 50%;
+      }
+      .person.amr {
+        flex: 0 0 100%;
+      }
+      .person:last-child {
+        flex: 0 0 100%;
+      }
+  }
+  @media only screen and (max-width: 500px) {
+    .person {
+        flex: 0 0 100% !important;
+      }
+      .person-text {
+        margin-top: 1rem;
+      }
+  }
+  @media only screen and (max-width: 450px) {
+    .article-view {
+      position: fixed;
+      left: -40rem;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .menu-button {
+      right: 3px;
+    }
+  }
+  @media only screen and (max-width: 250px) {
+    .nav__word {
+      position: fixed;
+      right: -30rem;
+    }
+  }
+  
